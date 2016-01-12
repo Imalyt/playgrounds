@@ -15,8 +15,8 @@ var dist = 'dist',
     jsSrc = src + '/js',
     jsDist = dist + '/js';
 
-gulp.task('default', function() {
-
+gulp.task('default', function() { // hello
+    // comment
 });
 
 // clean task
