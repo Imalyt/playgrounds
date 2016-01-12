@@ -1,0 +1,67 @@
+.navigation {
+	background: #fff;
+	height: 66px;
+	padding-left: 30px;
+	.logo {
+		font-family: "MullerBold";
+	}
+	.navigation-list {
+		overflow: hidden;
+	}
+	.navigation-list li {
+		padding: 0px 10px;
+		height: 66px;
+		line-height: 66px;
+		float: left;
+		font-family: "MullerMedium";
+		text-transform: uppercase;
+  		margin-left: 50px;
+  		letter-spacing: 1.5px;
+  		&.active {
+  			border-bottom: 3px solid @color-red;
+			a {
+				color: @color-red;
+			}
+  		}
+  		a {
+  			color: #000;
+  			text-decoration: none;
+  			&:hover {
+  				color: @color-red;
+  			}
+  		}
+	}
+	.navigation-profile {
+		font-family: "MullerRegular";
+		font-size: 14px;
+		letter-spacing: 1px;
+		text-decoration: none;
+		background-color: @color-red;
+		color: #fff;
+		height: 66px;
+		padding: 0px 45px;
+		line-height: 66px;
+		.img-holder	{
+			max-width: 45px;
+			margin-left: 15px;
+			img {
+				width: 100%;
+			}
+		}
+		.icon.icon-down-white {
+			margin-top: 32px;
+    		margin-left: 8px;
+		}
+	}
+}
+
+.logo {
+	font-family: "MullerLight" ;
+	color: #000;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	font-size: 18px;
+	margin-top: 20px;
+
+}

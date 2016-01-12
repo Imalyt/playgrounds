@@ -1,78 +1,11 @@
+// bootstrap
 @import "../../node_modules/bootstrap/less/bootstrap";
 @import "bootstrap/variables";
+// reusable components
+@import "components/variables";
 @import "components/font";
-
-// variables
-@color-yellow: #000000;
-
-
-body {
-	background: #efefef;
-	font-size: 14px;
-	line-height: 1.28;
-	font-family: "MullerLight";
-}
-
-.navigation {
-	background: #fff;
-	height: 66px;
-	padding-left: 30px;
-	.logo {
-		font-family: "MullerBold";
-	}
-	.navigation-list {
-		overflow: hidden;
-	}
-	.navigation-list li {
-		padding: 0px 10px;
-		height: 66px;
-		line-height: 66px;
-		float: left;
-		font-family: "MullerMedium";
-		text-transform: uppercase;
-  		margin-left: 50px;
-  		letter-spacing: 1.5px;
-  		&.active {
-  			border-bottom: 3px solid #fd6767;
-			a {
-				color: #fd6767;
-			}
-  		}
-  		a {
-  			color: #000;
-  			text-decoration: none;
-  			&:hover {
-  				color: #fd6767;
-  			}
-  		}
-	}
-	.navigation-profile {
-		font-family: "MullerRegular";
-		font-size: 14px;
-		letter-spacing: 1px;
-		text-decoration: none;
-		background-color: #fd6767;
-		color: #fff;
-		height: 66px;
-		padding: 0px 45px;
-		line-height: 66px;
-		.img-holder	{
-			max-width: 45px;
-			img {
-				width: 100%;
-				margin-left: 15px;
-			}
-		}
-	}
-}
-
-.logo {
-	font-family: "MullerLight" ;
-	color: @color-yellow;
-	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: 0.8px;
-	font-size: 18px;
-	margin-top: 20px;
-
-}
+@import "components/icons";
+@import "components/body-style";
+@import "components/navigation";
+// modules
+@import "modules/book";
