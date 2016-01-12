@@ -15,13 +15,8 @@ var dist = 'dist',
     jsSrc = src + '/js',
     jsDist = dist + '/js';
 
-<<<<<<< HEAD
-gulp.task('default', ["watch"], function() {
-
-=======
-gulp.task('default', function() { // hello
+gulp.task('default', ["watch"], function() { // hello
     // comment
->>>>>>> b8a332fb5d56bb677d5f5f926aafe746b1b78479
 });
 
 // clean task
