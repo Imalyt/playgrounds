@@ -3,7 +3,7 @@
 	height: 66px;
 	padding-left: 30px;
 	.logo {
-		font-family: "MullerBold";
+		font-family: @font-family-bold;
 	}
 	.navigation-list {
 		overflow: hidden;
@@ -13,7 +13,7 @@
 		height: 66px;
 		line-height: 66px;
 		float: left;
-		font-family: "MullerMedium";
+		font-family: @font-family-medium;
 		text-transform: uppercase;
   		margin-left: 50px;
   		letter-spacing: 1.5px;
@@ -32,7 +32,7 @@
   		}
 	}
 	.navigation-profile {
-		font-family: "MullerRegular";
+		font-family: @font-family-regular;
 		font-size: 14px;
 		letter-spacing: 1px;
 		text-decoration: none;
@@ -52,11 +52,31 @@
 			margin-top: 32px;
     		margin-left: 8px;
 		}
+		.icon.icon-down-grey {
+			margin-top: 32px;
+    		margin-left: 8px;
+		}
+		.icon.location {
+			margin-top: 32px;
+    		margin-left: 8px;
+		}
+		.icon.searcher {
+			margin-top: 32px;
+    		margin-left: 8px;
+		}
+		.icon.box-unchecked {
+			margin-top: 32px;
+    		margin-left: 8px;
+		}
+		.icon.box-checked {
+			margin-top: 32px;
+    		margin-left: 8px;
+		}
 	}
 }
 
 .logo {
-	font-family: "MullerLight" ;
+	font-family: @font-family-light;
 	color: #000;
 	font-weight: 900;
 	text-transform: uppercase;
