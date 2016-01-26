@@ -39,6 +39,24 @@ gulp.task('fonts', function() {
         .pipe(connect.reload());
 });
 
+// js task
+gulp.task('js', function() {
+    return gulp.src('src/js/**/*.**')
+        .pipe(gulp.dest(dist + '/js'))
+        .pipe(connect.reload());
+});
+
+// copy vendor files
+gulp.task('vendor', function() {
+    return gulp.src([
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap/dist/js/bootstrap.js'
+        ])
+        .pipe(gulp.dest(src + '/js'))
+        .pipe(gulp.dest(dist + '/js'))
+        .pipe(connect.reload());
+});
+
 //img task
 gulp.task('images', function() {
     return gulp.src(imgSrc + '/**/*.**')
@@ -56,7 +74,7 @@ gulp.task('styles', function() {
 
 // build static site for local testing
 gulp.task('build-static', ['clean'], function(cb) {
-    runSequence(['styles', 'images', 'html', 'fonts'], cb);
+    runSequence(['styles', 'images', 'html', 'fonts', 'vendor', 'js'], cb);
 });
 
 // run server via gulp-connect
