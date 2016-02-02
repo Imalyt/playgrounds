@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     runSequence = require('gulp-run-sequence'),
     connect = require('gulp-connect'),
+    autoprefixer = require('gulp-autoprefixer'),
     watch = require('gulp-watch');
 
 var dist = 'dist',
@@ -50,6 +51,10 @@ gulp.task('images', function() {
 gulp.task('styles', function() {
     return gulp.src(lessSrc + '/*.**')
         .pipe(less())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest(cssDist))
         .pipe(connect.reload());
 });
