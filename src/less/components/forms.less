@@ -35,14 +35,21 @@
 	position: absolute;
 	left: -9999px;
 	// unchecked
+	+ label {
+		color: #7e7e7e;
+		letter-spacing: 1px;
+	}
 	+ label:before {
 		background-image: @sprite-url;
 		background-repeat: no-repeat;
 		content: " ";
-		width: 22px;
-    	height: 22px;
-		background-position: 1px -49px;
+		width: 23px;
+    	height: 23px;
+		background-position: 0px -50px;
 		display: inline-block;
+		position: relative;
+		top: 6px;
+		margin-right: 7px;
 	}
 	// checked
 	&:checked {
