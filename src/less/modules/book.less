@@ -1,3 +1,4 @@
+// sidebar
 .search {
 	background-color: @color-red;
 	color: #fff;
@@ -41,4 +42,32 @@
 		color: #fd6767;
 	}
 }
+// end of sidebar 
+// book start
+.book-item {
+	position: relative;
 
+	.img-holder{
+		float: left;
+		width: 220px;
+		height: 174px;
+	}
+	.about-info {
+		margin-left: 20px;
+		padding-right: 200px;
+
+		h3 {
+			font-family: @font-family-bold;
+		}
+
+		p {
+			font-family: @font-family-light;
+			color: #7e7e7e;
+		}
+	}
+	.additional-info {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
